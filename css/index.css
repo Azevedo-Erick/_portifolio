@@ -10,16 +10,17 @@
     background-repeat: no-repeat;
     height: 1200px;
 }*/
-
+a{
+    text-decoration: none;
+}
 nav{
     background-color: #07082b;
     display: flex;
     flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-between;
     flex-direction: row;
-    padding: 1%;
-    height: 40px;
+    padding: 1% 4% 1% 2%;
+    /*height: 40px;*/
+    justify-content: space-between;
 }
 .color-name{
     color:#38B6FF;
@@ -35,8 +36,13 @@ nav{
 }
 .navegation>a{
     font-family: 'Bebas Neue';
-    font-size: 23px;
+    font-size: 32px;
     color: #fff;
+    margin-right: 10px;
+}
+.navegation>a:hover{
+    opacity: 0.4;
+    transition: 400ms;
 }
 /*Apresentação*/
 canvas{ 
@@ -95,7 +101,7 @@ canvas{
 }
 
 /*Sobre mim*/
-.about{
+#about{
     background-color: #07082B;
     display: flex;
     flex-wrap: wrap;
@@ -141,6 +147,10 @@ canvas{
     display: flex;
     flex-direction: row;
 }
+.part-photo-social ul li a:hover{
+    opacity: 0.4;
+    transition: 400ms;
+}
 .social-image{
     margin-right: 10px;
     height: 50px;
@@ -148,8 +158,9 @@ canvas{
 }
 
 /*Skills*/
-.skills{
+#skills{
     background-color: #181b69;
+    padding: 2%;
 }
 .center{
     text-align: center;
@@ -161,7 +172,6 @@ canvas{
     padding: 1% 0% 3% 20%;
 }
 .sub-skills-box{
-    
     min-width: 400px;
     flex-direction: row;
     display: flex;
@@ -201,21 +211,52 @@ canvas{
     width: 20px;
     padding: 10%;
     border-radius: 50%;
-    border: 1px solid #34353a;
+    border: 1px solid #696969;
+    
 }
 .complete{
-    background-color: green;
+    animation-duration: 4s;
+    animation-name: leveling-complete;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
 .incomplete{
     background-color:rgb(163, 8, 8) ;
+    animation-duration: 4s;
+    animation-name: leveling-incomplete;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes leveling-complete{
+    0%{
+        background-color: rgb(0, 87, 19);
+    }
+    50%{
+        background-color: rgb(11, 156, 11);
+    }
+    100%{
+        background-color: rgb(0, 100, 0);
+    }
+}
+@keyframes leveling-incomplete{
+    0%{
+        background-color: rgb(99, 11, 5);
+    }
+    50%{
+        background-color: rgb(99, 20, 0);
+    }
+    100%{
+        background-color: rgb(189, 0, 0);
+    }
 }
 
 /*Labs*/
 
-.labs{
+#labs{
+    padding: 2%;
     background-color: #07082B;
     height: 300px;
-    width: 100%;
 }
 .labs-box > p{
     text-align: center;
@@ -226,8 +267,60 @@ canvas{
 
 /*Contatp*/
 
-.contact{
+#contact{
     background-color: #181b69;
+    padding: 2%;
+}
+.contact-social-box{
+    width: 60%;
     height: 300px;
-    width: 100%;
+    border-radius: 1%;
+    border: #040b2d solid 1px;
+    background-color: #07082b;
+    padding: 2%;
+    margin: 0 20%;
+}
+.contact-social-box > p{
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 22px;
+    color: #fff;
+}
+.contact_image{
+    width: 40px;
+    height: 40px;
+}
+
+.social_name{
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 18px;
+    color: #fff;
+}
+.social-part-out{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+}
+.social-part{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2%;
+}
+.social-part:hover{
+    opacity: 0.4;
+    transition: 400ms;
+}
+
+/*Rodapé*/
+
+footer{
+    background-color: #07082b;
+}
+.footer > p{
+    font-family: 'GlacialIndifferenceRegular';
+    font-size: 22px;
+    color: #fff;
+    padding: 2%;
 }
