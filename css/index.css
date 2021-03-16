@@ -131,7 +131,7 @@ canvas{
     border-radius: 50%; 
     margin: 0 10px; }
 .about-part-title{
-    margin-left: 50%;
+    margin-left: 45%;
     margin-top: 2%;
 }
 .part-photo-social{
@@ -145,6 +145,12 @@ canvas{
     font-size: 18px;
     color: #fff;
     max-width: 600px;
+    list-style: disc;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+.about-me>li{
+    margin-top: 10px;
 }
 .me{
     height: 250px;
@@ -220,6 +226,7 @@ canvas{
     height: 10px;
     width: 100px;
     padding: 3px;
+    margin-top: 10px;
 }
 .levels::after{
     content: '';
@@ -243,7 +250,6 @@ canvas{
     background: #06bd00;
     width: 100%;
 }
-
 /*Labs*/
 
 #labs{
