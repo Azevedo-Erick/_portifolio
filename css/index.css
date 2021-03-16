@@ -213,6 +213,7 @@ canvas{
 }
 .card-skill > img{
     width: 80%;
+    height: 50%;
 }
 .card-skill > p{
     font-family: 'GlacialIndifferenceRegular';
